@@ -1,0 +1,58 @@
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.vs/
+*.vscode/
+
+# Visual Studio cache files
+.vs/
+
+# Rider IDE files
+.idea/
+
+# Resharper files
+_ReSharper*/
+
+# DotCover files
+*.dotCover
+
+# ASP.NET Core runtime files
+wwwroot/lib/
+
+# Publish outputs
+publish/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+packages/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Secrets
+secrets.json
+
+# Entity Framework Core Migrations snapshot files
+**/Migrations/*.Designer.cs
+
+# Others
+*.pidb
+*.mdb
+*.pdb
+
+# User secrets
+secrets/
+
+# Azure Pipelines
+*.azure-pipelines.yml
+
