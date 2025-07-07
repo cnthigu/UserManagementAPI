@@ -19,7 +19,7 @@ API RESTful simples para gerenciamento de usuários, desenvolvida com ASP.NET Co
 -   **Swagger (Swashbuckle.AspNetCore):** Para documentação e testes interativos da API.
 -   **JWT (JSON Web Tokens):** Para autenticação e autorização.
 
-![Swagger Endpoints](docs/swagger.png)
+![Swagger Endpoints](docs/swagger.jpg)
 
 ## Como Rodar Localmente
 
