@@ -6,16 +6,17 @@ namespace UserManagementAPI.Models
     {
         [Key]
         public int Id { get; set; }
-        [Required]
-        [MaxLength(100)]
+
+        [Required(ErrorMessage = "O nome é obrigatório.")]
+        [StringLength(100, ErrorMessage = "O nome não pode exceder 100 caracteres.")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "O campo Email é obrigatório.")]
-        [EmailAddress(ErrorMessage = "O formato do Email é inválido.")]
-        [MaxLength(100, ErrorMessage = "O Email não pode ter mais de 100 caracteres.")]
+        [Required(ErrorMessage = "O email é obrigatório")]
+        [EmailAddress(ErrorMessage = "Formato de email inválido.")]
         public string Email { get; set; }
 
-        [Required(ErrorMessage = "O campo Senha é obrigatório.")]
+        [Required(ErrorMessage = "A senha é obrigatória.")]
+        [MinLength(6, ErrorMessage = "A senha deve ter no mínimo 6 caracteres.")]
         public string PasswordHash { get; set; }
 
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;

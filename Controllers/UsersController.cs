@@ -4,12 +4,15 @@ using Microsoft.EntityFrameworkCore;
 using UserManagementAPI.Data;
 using UserManagementAPI.DTOs;
 using UserManagementAPI.Models;
+using Microsoft.AspNetCore.Authorization;
+
 
 
 namespace UserManagementAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class UsersController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
